@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Logement() {
+export const Logement=() =>{
   return (
-    <div>
+    
       <h1>Page Logement</h1>
-    </div>
+   
   );
 }

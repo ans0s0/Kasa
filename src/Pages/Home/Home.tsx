@@ -1,8 +1,8 @@
 import React from "react";
-import "../../App.scss";
-import Banner from "../../components/Banner/Banner.js";
 
-export default function Home() {
+import {Banner} from "../../components/Banner/Banner.js";
+
+export const Home=()=> {
   return (
     <div>
       <h1>Page Home</h1>

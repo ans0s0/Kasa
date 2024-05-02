@@ -1,4 +1,6 @@
-export default function Banner() {
+import React from "react";
+
+export const Banner = () => {
   return (
     <div className="containerBanner">
       <div className="backgroundBanner">
@@ -6,4 +8,4 @@ export default function Banner() {
       </div>
     </div>
   );
-}
+};
