@@ -1,0 +1,42 @@
+.error{
+margin-left: auto;
+margin-right: auto;
+
+gap: 139px;
+}
+
+.notFound{
+    display: flex;
+    justify-content: center;
+    font-size:288px;
+    font-family:Montserrat;
+    color:#FF6060;
+    font-weight: 700;
+    line-height: 410,69px;
+    margin-top: 89px;
+    margin-bottom: 139px;
+}
+
+.oups{
+    display: flex;
+    justify-content: center;
+    font-size:36px;
+    font-weight: 500;
+    font-family:Montserrat;
+    color:#FF6060;
+    line-height: 51,34px;
+    margin-top:0px;
+    margin-bottom: 139px;
+    
+}
+
+.comeBack{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    font-size:18px;
+    font-weight: 500;
+    font-family:Montserrat;
+    line-height: 25,67px;
+    margin-bottom: 139px;
+}

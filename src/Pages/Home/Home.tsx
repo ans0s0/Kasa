@@ -1,22 +1,18 @@
 import React from "react";
-import {Header} from "../../components/Header/Header.tsx";
+
 
 import {Banner} from "../../components/Banner/Banner.tsx";
-import {CardsList} from "../../components/Cards/Cards.tsx";
+import {ListLogement} from "./Logements/ListLogement.tsx";
+import {Picture} from "../../components/Pictures/pictures.tsx"
 
-import {Footer} from "../../components/Footer/Footer.tsx";
+import bannerImg from './banner.png';
 
 export const Home=()=> {
   return (
-    <div>
-      
-      <Header />
-       <Banner />
-     
-      <CardsList/>
-      <Footer/>
-
-    </div>
+    <>
+      <Banner bannerImg={bannerImg} />
+      <ListLogement />
+    </>
   );
 }
 

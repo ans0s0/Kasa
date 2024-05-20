@@ -1,0 +1,33 @@
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:50px;
+  
+  margin-right: auto;
+  margin-left: auto;
+ 
+
+  font-family: Montserrat;
+  width:95%;
+  height:223px;
+  border-radius: 25px;
+  
+  font-size:48px;
+}
+
+.banner p{
+  position: absolute;
+  color: white;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: bold;
+  -webkit-text-stroke-color: black 5px;
+
+}
+  img {
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  }
+

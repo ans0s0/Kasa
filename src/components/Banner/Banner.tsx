@@ -1,14 +1,17 @@
 import React from "react";
+import './banner.scss'
 
+type BannerProps = {
+  bannerImg: string
+}
 
-
-export const Banner = () => {
+export const Banner = ({bannerImg}: BannerProps) => {
   return (
-    <div className="Banner">
-       <div className="backgroundBanner">
-        
-        <div>Chez vous, partout et ailleurs</div>
-      </div>
+    <div className="banner">
+      <p>Chez vous, partout et ailleurs</p>
+      <img src={bannerImg}  alt=""/>
     </div>
   );
 };
+
+

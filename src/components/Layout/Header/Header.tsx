@@ -1,6 +1,6 @@
 import React from "react";
-import logo from '../../Images/logo_red.png'
-
+import logo from '../../../Images/logo_red.png';
+import './Header.scss';
 
 export const Header = () => {
     return (
@@ -10,8 +10,8 @@ export const Header = () => {
 
             <nav className="menu">
 
-                <div className="first-element-menu"><a href="#accomodations">Accueil</a></div>
-                <div className="second-element-menu"><a href="#activities">A Propos</a></div>
+                <div className="first-element-menu"><a href="/">Accueil</a></div>
+                <div className="second-element-menu"><a href="APropos">A Propos</a></div>
 
             </nav>
 

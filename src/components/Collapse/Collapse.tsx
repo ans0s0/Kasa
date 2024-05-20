@@ -1,6 +1,14 @@
 import React, {useState} from "react";
+import logo from '../../Images/arrow_back.png'
+import '../../styles/App.scss';
 
-export const Collapse = (props) => {
+type CollapseProps = {
+  title: string;
+  description: string;
+}
+
+// TODO : remplacer <img /> par un composant qui retourn le SVG de l'icon -> il faut donc 2 composnats pour la flèche
+export const Collapse = ({ title, description }: CollapseProps) => {
     const [open, setOPen] = useState(false);
 
     const toggle = () => {
@@ -9,84 +17,12 @@ export const Collapse = (props) => {
 
     return (
 
-<div className="Collapses">
-   
-         <button onClick={toggle}>{props.Introduction}Fiabilité</button>
-        {open && 
-  <div>
-  <p>
-  Les annonces postées sur Kasa garantissent une fiabilité totale. 
-            Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.
-  </p></div>
+<div className="Collapse">
+         <button>{title}<img onClick={toggle} src={logo} alt='Kasa' className='arrow' /></button>
+         {open && <p>{description}</p>}
+    </div>
+    )
   }
-</div>)};
-
-export const Collapse2 = (props) => {
-    const [open, setOPen] = useState(false);
-
-    const toggle = () => {
-        setOPen(!open);
-      };
-
-    return (
-
-<div className="Collapses">
-   
-<button onClick={toggle}>{props.Respect}Respect</button>
-        {open && 
-  <div>
-  <p>
-  La bienveillance fait partie des valeurs fondatrices de Kasa. 
-  Tout comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme.
-  </p></div>
-  }
-</div>)};
-
-
-export const Collapse3 = (props) => {
-    const [open, setOPen] = useState(false);
-
-    const toggle = () => {
-        setOPen(!open);
-      };
-
-    return (
-
-<div className="Collapses">
-   
-<button onClick={toggle}>{props.Service}Service</button>
-        {open && 
-  <div>
-  <p>
-  La bienveillance fait partie des valeurs fondatrices de Kasa. 
-  Tout comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme.
-  </p></div>
-  }
-</div>)};
-
-
-export const Collapse4 = (props) => {
-    const [open, setOPen] = useState(false);
-
-    const toggle = () => {
-        setOPen(!open);
-      };
-
-    return (
-
-<div className="Collapses">
-   
-<button onClick={toggle}>{props.Sécurité}Sécurité</button>
-        {open && 
-  <div>
-  <p>
-  La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. 
-  </p></div>
-  }
-     
-</div>)};
-
-
 
 
 
